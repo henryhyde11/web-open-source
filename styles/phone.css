@@ -21,7 +21,9 @@ body{
 /* Header */
 
 .header{
-    padding: 0.5em;
+    padding: 1em;
+    background: rgb(170,170,189);
+    background: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%);
 }
 .header ul{
     display: flex;
@@ -37,8 +39,8 @@ body{
     width: 100%;
     height: 1.7em;
     padding: 0.5em;
-    border: solid 0.5px;
-    border-radius: 15px;
+    border-radius: 30px;
+    border: none;
 }
 
 
