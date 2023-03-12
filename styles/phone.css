@@ -2,6 +2,7 @@
     --sm: 1.2rem;
     --m: 1.4rem;
     --l: 1.6rem;
+    --header-bg: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%)
 }
 
 
@@ -11,37 +12,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 62.5%;
 }
+
 body{
     font-family: 'Golos Text', sans-serif;
 }
 
+/* Interaction */
+
+.hide{
+    display: none;
+}
+
+
 /* Header */
 
 .header{
+    width: 100%;
     padding: 1em;
-    background: rgb(170,170,189);
-    background: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%);
+    background: var(--header-bg)
 }
-.header ul{
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left ul,
+.nav-right ul{
     display: flex;
     justify-content:space-between;
     align-items: center;
     list-style: none;
 }
-.header img{
+
+.nav-left__img{
     width: 3.5em;
 }
 
-.header input{
+.nav-right__input{
     width: 100%;
     height: 1.7em;
     padding: 0.5em;
     border-radius: 30px;
     border: none;
 }
+
+.menu-drop-down-left{
+    width: 50%;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    background: white;
+}
+
+.menu-drop-down-left ul{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    list-style: none;
+}
+
+.menu-drop-down-left li{
+    cursor: pointer;
+}
+
+.menu-drop-down-left a{
+    display: block;
+    text-decoration: none;
+    font-size: var(--m);
+    font-weight: 500;
+    color: black;
+    line-height: 2em;
+}
+
+.menu-drop-down-left li:hover{
+    border: solid black 1px;
+}
+
+
+
+
 
 
 /* Main container */
