@@ -10,9 +10,3 @@ navLeftImg.addEventListener('click', ()=>{
         menuDropLeft.classList.add('hide');
     }
 })
-
-// body.addEventListener('click', ()=>{
-//     if (!menuDropLeft.classList.contains('hide')){
-//         menuDropLeft.classList.add('hide')
-//     }
-// })
