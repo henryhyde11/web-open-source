@@ -54,6 +54,7 @@ body{
 
 .nav-left__img{
     width: 3.5em;
+    cursor: pointer;
 }
 
 .nav-right__input{
@@ -75,7 +76,7 @@ body{
 
 .menu-drop-down-left ul{
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     list-style: none;
 }
 
