@@ -36,9 +36,9 @@ async function notice(){
         
         function showPlate(food){
             const item = data[food];
-            plate.innerHTML = item.name;
-            kind.innerHTML = item.type;
-            price.innerHTML = item.price;
+            plate.textContent = item.name;
+            kind.textContent = item.type;
+            price.textContent = item.price;
         };
         
         window.onload = showPlate(currenItem);
@@ -62,7 +62,6 @@ async function notice(){
     catch (e){
         console.error(e)
     }
-    
 }
 
 notice();
