@@ -96,3 +96,38 @@ body{
 .menu-drop-down-left li:hover{
     border: solid black 1px;
 }
+
+
+/*Price container  */
+
+.main-container{
+    width: fit-content;
+    min-width: 300px;
+    height: fit-content;
+    min-height: 479px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--blue-oscurito);
+    border-radius: 50px;
+    background-color: var(--blue-clarito);    
+}
+
+.main-title{
+    padding: 20px;
+}
+
+.img-container img{
+    width: auto;
+    height: 198.9px;
+    box-shadow: 8px 8px var(--shadow);
+    background-size: cover;
+}
+
+.main-content{
+    padding: 20px;
+    font-size: var(--lg);
+    text-align: center;
+}
