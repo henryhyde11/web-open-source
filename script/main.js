@@ -12,14 +12,14 @@ navLeftImg.addEventListener('click', () => {
 })
 
 
-//Notices sections interactions.
+//Notice section interactions.
 
 const plate = document.querySelector('.plate');
 const kind = document.querySelector('.kind');
 const price = document.querySelector('.price');
 
-const btnLeft = document.querySelector('.btn-left');
-const btnRight = document.querySelector('.btn-right');
+const btnLeft = document.querySelector('.btn--left');
+const btnRight = document.querySelector('.btn--right');
 
 
 async function notice(){
@@ -36,9 +36,9 @@ async function notice(){
         
         function showPlate(food){
             const item = data[food];
-            plate.textContent = item.name;
-            kind.textContent = item.type;
-            price.textContent = item.price;
+            plate.textContent = String(item.name).toUpperCase();
+            kind.textContent = String(item.type).toUpperCase();
+            price.textContent = '$' + item.price;
         };
         
         window.onload = showPlate(currenItem);
