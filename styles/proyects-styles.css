@@ -97,3 +97,25 @@ body{
     border: solid black 1px;
 }
 
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5em ;
+}
+
+.project{
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    border: solid black 2px;
+    border-radius: 40px;
+    font-size: var(--m);
+    line-height: 1.5em;
+}
+
+.project__description{
+    margin-top: 1em;
+}
