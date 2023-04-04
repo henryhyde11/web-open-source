@@ -67,7 +67,8 @@ body{
 }
 
 .menu-drop-down-left{
-    width: 20em;
+    width: 15em;
+    height: 20em;
     position: absolute;
     padding: 1em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
