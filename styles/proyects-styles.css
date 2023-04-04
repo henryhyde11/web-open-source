@@ -2,7 +2,9 @@
     --sm: 1.4rem;
     --m: 1.8rem;
     --l: 2.4rem;
-    --header-bg: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%)
+    --header-bg: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%);
+    --footer-bg: linear-gradient(90deg, rgba(229,213,240,1) 0%, rgba(209,180,180,1) 50%, rgba(153,146,136,1) 100%);
+    --bg-color: #EAEEF6;
 }
 
 
@@ -34,7 +36,7 @@ body{
 
 .header{
     width: 100%;
-    padding: 1em;
+    padding: 2em;
     background: var(--header-bg)
 }
 
@@ -98,11 +100,13 @@ body{
     border: solid black 1px;
 }
 
+/* Main  */
+
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2.5em ;
+    margin: 2.5em 0;
 }
 
 .project{
@@ -128,13 +132,16 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1em;
-    margin-top: 2em;
-    background: var(--header-bg);
+    padding: 2em;
+    background: var(--footer-bg);
 }
 
 .footer ul{
     list-style: none;
+}
+
+.footer ul li{
+    padding: 1.5em;
 }
 
 .footer ul li a{

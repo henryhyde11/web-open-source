@@ -2,7 +2,9 @@
     --sm: 1.4rem;
     --m: 1.8rem;
     --l: 2.4rem;
-    --header-bg: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%)
+    --header-bg: linear-gradient(90deg, rgba(170,170,189,1) 6%, rgba(139,139,157,0.9967174369747899) 51%, rgba(162,162,162,1) 97%);
+    --footer-bg: linear-gradient(90deg, rgba(229,213,240,1) 0%, rgba(209,180,180,1) 50%, rgba(153,146,136,1) 100%);
+    --bg-color: #EAEEF6;
 }
 
 
@@ -34,8 +36,8 @@ body{
 
 .header{
     width: 100%;
-    padding: 1em;
-    background: var(--header-bg)
+    padding: 2em;
+    background: var(--header-bg);
 }
 
 .nav{
@@ -102,9 +104,6 @@ body{
 /*Price container  */
 
 .main-container{
-    width: 100%;
-    min-width: 32rem;
-    height: 44.5em;
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -114,7 +113,6 @@ body{
 
 .main-title{
     font-size: 4em;
-    padding: 0.2em;
 }
 
 .main-content{
@@ -132,16 +130,18 @@ body{
 /* Footer */
 
 .footer{
-    width: 100%;
-    min-width: 32em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1em;
-    background: var(--header-bg);
+    padding: 2em;
+    background: var(--footer-bg);
 }
 
 .footer ul{
     list-style: none;
+}
+
+.footer ul li{
+    padding: 1.5em;
 }
 
 .footer ul li a{
