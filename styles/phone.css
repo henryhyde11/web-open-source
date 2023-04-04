@@ -110,7 +110,7 @@ body{
 }
 
 .main-container__title{
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .main__img{
@@ -164,6 +164,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
+    margin-top: 2em;
     background: var(--header-bg);
 }
 

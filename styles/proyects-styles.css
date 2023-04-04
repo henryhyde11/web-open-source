@@ -120,3 +120,29 @@ body{
 .project__description{
     margin-top: 1em;
 }
+
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    margin-top: 2em;
+    background: var(--header-bg);
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    font-size: var(--m);
+    color: black;
+}
+
+.footer ul li a:hover{
+    font-weight: bold;
+}
