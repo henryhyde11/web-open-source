@@ -102,7 +102,9 @@ body{
 /*Price container  */
 
 .main-container{
+    width: 100%;
     min-width: 32rem;
+    height: 44.5em;
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -130,9 +132,8 @@ body{
 /* Footer */
 
 .footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    min-width: 32em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
