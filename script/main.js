@@ -43,20 +43,22 @@ async function notice(){
         
         window.onload = showPlate(currenItem);
         
-        btnRight.addEventListener('click', () => {
+        btnRight.addEventListener('click', (e) => {
             currenItem++;
             if(currenItem > data.length - 1){
                 currenItem = 0;
             }
             showPlate(currenItem);
+            e.preventDefault();
         });
 
-        btnLeft.addEventListener('click', () => {
+        btnLeft.addEventListener('click', (e) => {
             currenItem--;
             if(currenItem < 0){
                 currenItem = data.length - 1;
             }
             showPlate(currenItem);
+            e.preventDefault();
         });
     }
     catch (e){

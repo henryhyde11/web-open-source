@@ -37,7 +37,7 @@ body{
 .header{
     width: 100%;
     padding: 2em;
-    background: var(--header-bg);
+    background: var(--footer-bg);
 }
 
 .nav{
@@ -133,7 +133,7 @@ body{
 }
 
 .main-article{
-    margin-top: 2em;
+    padding: 5em 0;
 }
 
 .main-article__title{
@@ -142,6 +142,8 @@ body{
 }
 
 .main-article__text{
+    width: 100%;
+    max-width: 32em;
     font-size: var(--m);
     text-align: justify;
 }
